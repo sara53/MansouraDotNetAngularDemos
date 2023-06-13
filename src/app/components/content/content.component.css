@@ -1,0 +1,12 @@
+section.content {
+    background-color: #aaa;
+    padding: 40px;
+    font-size: 20px;
+}
+
+button {
+    width: 170px;
+    padding: 10px;
+    border: 0;
+    background-color: orange;
+}
