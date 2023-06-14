@@ -4,3 +4,9 @@ footer {
     text-align: center;
     background-color: #000;
 }
+
+.jsClass{
+
+    background-color: palevioletred;
+    padding: 30px;
+}

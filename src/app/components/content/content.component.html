@@ -1,10 +1,40 @@
-<section class="content">
-  <h2>Our Products</h2>
-  <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quod
-    exercitationem velit ratione dicta temporibus, aliquam reprehenderit fugit
-    numquam adipisci possimus quae voluptatum eos, officia repellendus dolorum
-    perferendis, architecto laboriosam!
+<section class="container m-5 bg-light p-5 rounded">
+  <h2 class="text-center fw-bold">{{ componentTitle }}</h2>
+  <p class="bg-secondary fs-3 p-2 rounded text-light">
+    {{ isShow ? "Welcome From ITI" : "Hello Dot Net Track" }}
   </p>
-  <button>Show more</button>
+  <p class="lead" #myP>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quod
+  </p>
+  <input
+    type="text"
+    class="form-control"
+    value=""
+    placeholder="Enter Your Student Name"
+    [(ngModel)]="studentName"
+  />
+  <!-- banana annotation -->
+  <input
+    type="text"
+    class="form-control"
+    value=""
+    placeholder="Enter Your Age"
+    [(ngModel)]="age"
+  />
+  <p class="text-light mt-3 bg-dark p-4">
+    Your Search Key is : {{ studentName }} : {{ age }}
+  </p>
+
+  <select [(ngModel)]="selectValue">
+    <option>Html</option>
+    <option>Css</option>
+    <option>JS</option>
+  </select>
+
+  <p>you are selected : {{ selectValue }}</p>
+  <!-- <img src="assets/imgs/{{ imgSrc }}" alt="" />
+  <img [src]="imgSrc2" alt="" /> -->
+  <!-- <button class="btn btn-dark d-block mt-4" (click)="show(inputElement.value)">
+    Show more
+  </button> -->
 </section>

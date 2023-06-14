@@ -1,3 +1,77 @@
 <footer>
-  <p>All Right Reserved to ITI</p>
+  <!-- <ng-container *ngFor="let track of trackNames; let i = index">
+    <div class="bg-light p-1 text-dark rounded lead mb-2">
+      <h3 class="fw-bold">{{ track }} : {{ i }}</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+        consequuntur.
+      </p>
+      <button class="btn btn-primary">Show More !!</button>
+    </div>
+  </ng-container>
+  <h3 *ngFor="let x of trackNames">Hello</h3> -->
+  <!-- <h1 *ngIf="isOpen; else myDiv" class="bg-warning text-dark rounded">
+    Login Component
+  </h1>
+  <ng-template #myDiv>
+    <div class="bg-secondary p-2 m-2">
+      <h2>Welcome Dot net Track</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, et?</p>
+    </div>
+  </ng-template> -->
+  <!-- <div
+    [ngSwitch]="color"
+    class="bg-light text-dark p-2 text-center m-4 rounded"
+  >
+    <p *ngSwitchCase="'red'" class="text-danger fs-3 lead">
+      Your Fav Color is red
+    </p>
+    <p *ngSwitchCase="'green'" class="text-success fs-3 lead">
+      Your Fav Color is green
+    </p>
+    <p *ngSwitchCase="'blue'" class="text-primary fs-3 lead">
+      Your Fav Color is blue
+    </p>
+    <p *ngSwitchDefault class="text-muted fs-3 lead">
+      You don't have any fav color
+    </p>
+  </div>
+  <button class="btn btn-success">Login Component</button> -->
+
+  <!-- <p [style.color]="isOpen ? 'red' : 'green'" >
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum a
+    officiis, vero ad minima voluptate blanditiis adipisci quod, possimus
+    eligendi velit placeat saepe doloremque, deleniti corporis maiores hic
+    mollitia alias.
+  </p> -->
+  <!-- <p
+    [ngStyle]="{
+      color: isOpen ? '#fff' : '#000',
+      backgroundColor: isOpen ? 'green' : 'red',
+      padding: '20px'
+    }"
+  >
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum a
+    officiis, vero ad minima voluptate blanditiis adipisci quod, possimus
+    eligendi velit placeat saepe doloremque, deleniti corporis maiores hic
+    mollitia alias.
+  </p> -->
+  <!-- <p [class.jsClass]="isOpen">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum a
+    officiis, vero ad minima voluptate blanditiis adipisci quod, possimus
+    eligendi velit placeat saepe doloremque, deleniti corporis maiores hic
+    mollitia alias.
+  </p> -->
+  <!-- <p
+    [ngClass]="{
+      jsClass: isOpen,
+      'bg-primary': !isOpen
+    }"
+  >
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum a
+    officiis, vero ad minima voluptate blanditiis adipisci quod, possimus
+    eligendi velit placeat saepe doloremque, deleniti corporis maiores hic
+    mollitia alias.
+  </p> -->
+  <button class="btn btn-warning" (click)="toggleBtn()">Toggle</button>
 </footer>

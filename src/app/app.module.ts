@@ -6,10 +6,21 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { FormsModule } from '@angular/forms';
+import { GallaryComponent } from './components/gallary/gallary.component';
+import { TodosComponent } from './components/todos/todos.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ContentComponent, FooterComponent, SliderComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    ContentComponent,
+    FooterComponent,
+    SliderComponent,
+    GallaryComponent,
+    TodosComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
